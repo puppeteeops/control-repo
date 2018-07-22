@@ -1,0 +1,15 @@
+---
+verison: 5
+default:
+  datadir: /etc/puppetlabs/code/environments/%{environment}/hieradata
+
+hierarchy:
+  - name: "Normal data"
+    data_hash: yaml_data
+    paths:
+      -"nodes/%{trusted.certname}.yaml"
+      -"locations/%{trusted.extension.pp_environment}/%{trusted.certname}.yaml"
+      -"locations/%{trusted.extension.pp_environment}/common.yaml"
+      -"roles/%{trusted.extension.pp_role/%{trusted.certname}.yaml"
+      -"roles/%{trusted.extension.pp_role/common.yaml"
+      -"common.yaml"
