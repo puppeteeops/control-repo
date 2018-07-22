@@ -2,7 +2,7 @@ forge "http://forge.puppetlabs.com"
 mod "puppetlabs/stdlib",      '4.16.0'
 
 mod 'hieradata',
-  :git  => 'ssh://git@github.com:puppeteeops/hierdata.git',
+  :git  => 'ssh://git@github.com:puppeteeops/hieradata.git',
   :branch => :control_branch,
   :install_path => ''
 
