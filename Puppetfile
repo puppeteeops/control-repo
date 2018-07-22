@@ -12,6 +12,6 @@ mod 'site',
   :install_path => ''
 
 mod 'biemond-wildfly',
-  :git  => 'ssh://git@github.com:puppeteeops/biemond-wildfly.git'
+  :git  => 'ssh://git@github.com:puppeteeops/biemond-wildfly.git',
   :branch => :control_branch,
   :default_branch => 'master'
