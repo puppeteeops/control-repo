@@ -6,12 +6,12 @@ mod 'hieradata',
   :branch => :control_branch,
   :install_path => ''
 
-mod 'site'
+mod 'site',
   :git  => 'ssh://git@github.com:puppeteeops/site.git',
   :branch => :control_branch,
   :install_path => ''
 
-mod 'biemond-wildfly'
+mod 'biemond-wildfly',
   :git  => 'ssh://git@github.com:puppeteeops/biemond-wildfly.git'
   :branch => :control_branch,
   :default_branch => 'master'
