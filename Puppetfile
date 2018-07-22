@@ -7,7 +7,7 @@ mod 'hieradata',
   :install_path => ''
 
 mod 'site'
-  :git  => 'ssh//git@github.com:puppeteeops/site.git',
+  :git  => 'ssh://git@github.com:puppeteeops/site.git',
   :branch => :control_branch,
   :install_path => ''
 
