@@ -4,6 +4,18 @@ default:
   datadir: /etc/puppetlabs/code/environments/%{environment}/hieradata
 
 hierarchy:
+  - name: "Eyaml hierarchy"
+    lookup_key: eyaml_lookup_key # eyaml backend
+    paths:
+      - "nodes/%{trusted.certname}.yaml"
+      - "locations/%{trusted.extension.pp_environment}/%{trusted.certname}.yaml"
+      - "locations/%{trusted.extension.pp_environment}/common.yaml"
+      - "roles/%{trusted.extension.pp_role/%{trusted.certname}.yaml"
+      - "roles/%{trusted.extension.pp_role/common.yaml"
+      - "common.yaml"
+    options:
+        pkcs7_private_key: "/opt/puppetlabs/puppet/ssl/eyaml_keys/keys/private_key.pkcs7.pem"
+        pkcs7_public_key: "/opt/puppetlabs/puppet/ssl/eyaml_keys/keys/public_key.pkcs7.pem"
   - name: "Normal data"
     data_hash: yaml_data
     paths:
