@@ -8,10 +8,10 @@ hierarchy:
     lookup_key: eyaml_lookup_key # eyaml backend
     paths:
       - "nodes/%{trusted.certname}.eyaml"
-      - "locations/%{trusted.extension.pp_environment}/%{trusted.certname}.eyaml"
-      - "locations/%{trusted.extension.pp_environment}/common.eyaml"
-      - "roles/%{trusted.extension.pp_role/%{trusted.certname}.eyaml"
-      - "roles/%{trusted.extension.pp_role/common.eyaml"
+      - "locations/%{trusted.extensions.pp_environment}/%{trusted.certname}.eyaml"
+      - "locations/%{trusted.extensions.pp_environment}/common.eyaml"
+      - "roles/%{trusted.extensions.pp_role/%{trusted.certname}.eyaml"
+      - "roles/%{trusted.extensions.pp_role/common.eyaml"
       - "common.eyaml"
     options:
         pkcs7_private_key: "/opt/puppetlabs/puppet/ssl/eyaml_keys/keys/private_key.pkcs7.pem"
@@ -20,8 +20,8 @@ hierarchy:
     data_hash: yaml_data
     paths:
       - "nodes/%{trusted.certname}.yaml"
-      - "locations/%{trusted.extension.pp_environment}/%{trusted.certname}.yaml"
-      - "locations/%{trusted.extension.pp_environment}/common.yaml"
-      - "roles/%{trusted.extension.pp_role/%{trusted.certname}.yaml"
-      - "roles/%{trusted.extension.pp_role/common.yaml"
+      - "locations/%{trusted.extensions.pp_environment}/%{trusted.certname}.yaml"
+      - "locations/%{trusted.extensions.pp_environment}/common.yaml"
+      - "roles/%{trusted.extensions.pp_role/%{trusted.certname}.yaml"
+      - "roles/%{trusted.extensions.pp_role/common.yaml"
       - "common.yaml"
