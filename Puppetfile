@@ -2,16 +2,16 @@ forge "http://forge.puppetlabs.com"
 mod "puppetlabs/stdlib",      '4.16.0'
 
 mod 'hieradata',
-  :git  => 'ssh://git@github.com:puppeteeops/hieradata.git',
+  :git  => 'https://github.com/puppeteeops/hieradata.git',
   :branch => :control_branch,
   :install_path => ''
 
 mod 'site',
-  :git  => 'ssh://git@github.com:puppeteeops/site.git',
+  :git  => 'https://github.com/puppeteeops/site.git',
   :branch => :control_branch,
   :install_path => ''
 
 mod 'biemond-wildfly',
-  :git  => 'ssh://git@github.com:puppeteeops/biemond-wildfly.git',
+  :git  => 'https://github.com/puppeteeops/biemond-wildfly.git',
   :branch => :control_branch,
   :default_branch => 'master'
