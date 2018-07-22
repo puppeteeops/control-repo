@@ -1,6 +1,6 @@
 ---
 version: 5
-default:
+defaults:
   datadir: /etc/puppetlabs/code/environments/%{environment}/hieradata
 
 hierarchy:
