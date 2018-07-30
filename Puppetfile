@@ -1,5 +1,6 @@
 forge "http://forge.puppetlabs.com"
 mod "puppetlabs/stdlib",      '4.16.0'
+mod "jethrocarr/initfact",  '1.0.1'
 
 mod 'hieradata',
   :git  => 'https://github.com/puppeteeops/hieradata.git',
