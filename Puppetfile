@@ -16,3 +16,8 @@ mod 'biemond-wildfly',
   :git  => 'https://github.com/puppeteeops/biemond-wildfly.git',
   :branch => :control_branch,
   :default_branch => 'master'
+
+mod 'biemond-wildfly',
+  :git  => 'https://github.com/puppeteeops/apache2.git',
+  :branch => :control_branch,
+  :default_branch => 'main'
