@@ -19,4 +19,4 @@ mod 'biemond-wildfly',
 
 mod 'apache2',
   :git  => 'https://github.com/puppeteeops/apache2.git',
-  :branch => :control_branch,
+  :branch => :control_branch
